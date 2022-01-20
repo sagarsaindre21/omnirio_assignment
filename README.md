@@ -1,25 +1,31 @@
-# README
+Prerequisites
+The setups steps expect following tools installed on the system.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Github
+Ruby [2.7.1]
+Rails [6.0.2]
+1. Check out the repository
+bash git clone git@github.com:sagarsaindre21/omnirio_assignment.git
 
-Things you may want to cover:
+2. Start the Rails server
+You can start the rails server using the command given below.
 
-* Ruby version
+ruby rails s
 
-* System dependencies
+And now you can visit the site with the URL http://localhost:3000
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# omnirio_assignment
+3. Call the api
+You can visit http://localhost:3000/api/withdraw.json?input_amount=41
+it shows the Output:
+     {"Quarter":1,"Dime":1,"Nickel":1,"Penny":1}
+     
+4.You can visit http://localhost:3000/api/withdraw.json?input_amount=hello
+It shows the Output:
+     {}
+     
+5.You can visit http://localhost:3000/api/withdraw.json?input_amount=-12
+It shows the Output:
+     {}
+     
+     
+     
